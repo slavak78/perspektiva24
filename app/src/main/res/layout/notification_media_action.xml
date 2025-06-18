@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/action0"
+    style="?android:borderlessButtonStyle"
+    android:layout_width="48.0dip"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="2.0dip"
+    android:layout_marginRight="2.0dip"
+    android:layout_weight="1.0"
+    android:gravity="center"
+    tools:ignore="ContentDescription" />

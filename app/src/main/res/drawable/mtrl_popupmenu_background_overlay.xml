@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item>
+        <shape>
+            <solid android:color="?colorSurface" />
+            <corners
+                android:bottomLeftRadius="4.0dip"
+                android:bottomRightRadius="4.0dip"
+                android:topLeftRadius="4.0dip"
+                android:topRightRadius="4.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid
+                android:color="@color/mtrl_popupmenu_overlay_color"
+                tools:ignore="PrivateResource" />
+            <corners
+                android:bottomLeftRadius="4.0dip"
+                android:bottomRightRadius="4.0dip"
+                android:topLeftRadius="4.0dip"
+                android:topRightRadius="4.0dip" />
+            <padding
+                android:bottom="8.0dip"
+                android:top="8.0dip" />
+        </shape>
+    </item>
+</layer-list>

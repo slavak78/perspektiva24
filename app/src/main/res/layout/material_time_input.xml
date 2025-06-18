@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:errorIconDrawable="@null"
+    app:hintEnabled="false"
+    app:shapeAppearance="?shapeAppearanceMediumComponent"
+    app:shapeAppearanceOverlay="@null">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@id/material_timepicker_edit_text"
+        android:layout_width="96.0dip"
+        android:layout_height="80.0dip"
+        android:paddingBottom="6.0dip"
+        android:textCursorDrawable="@drawable/material_cursor_drawable"
+        tools:ignore="PrivateResource" />
+
+    <TextView
+        android:id="@id/material_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:labelFor="@id/material_timepicker_edit_text"
+        tools:ignore="LabelFor" />
+</com.google.android.material.textfield.TextInputLayout>

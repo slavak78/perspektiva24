@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/inner_spacing"
+    android:tag="layout/row_featured_property_0"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="0.0dip">
+
+    <LinearLayout
+        android:id="@id/layout_property_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#80f1f1f1"
+        android:orientation="vertical"
+        android:tag="binding_1">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginBottom="@dimen/inner_spacing"
+            android:contentDescription="@string/todo"
+            android:scaleType="center"
+            android:tag="binding_2" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/section_spacing"
+            android:paddingTop="@dimen/inner_spacing"
+            android:paddingEnd="@dimen/section_spacing"
+            android:paddingBottom="@dimen/inner_spacing"
+            android:tag="binding_3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_h4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingStart="@dimen/section_spacing"
+            android:paddingEnd="@dimen/section_spacing"
+            android:tag="binding_4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_h4"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/section_spacing"
+            android:paddingTop="@dimen/inner_spacing"
+            android:paddingEnd="@dimen/section_spacing"
+            android:paddingBottom="@dimen/inner_spacing">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/inner_spacing"
+                tools:ignore="RelativeOverlap">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="binding_5"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_size_h4"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/image_favorite"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_favorite" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

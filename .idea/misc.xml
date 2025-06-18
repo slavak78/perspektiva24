@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable-anydpi-v24/ic_startup.xml" value="0.2385" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable-anydpi-v24/ic_welcome1.xml" value="0.1065" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable-anydpi-v24/ic_welcome2.xml" value="0.2385" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable-anydpi-v24/ic_welcome3.xml" value="0.2385" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/avd_show_password.xml" value="0.114" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/button_bg.xml" value="0.1035" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/close_white.xml" value="0.103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/default_border.xml" value="0.136" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/dot_dot_dot.xml" value="0.1065" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/gradient.xml" value="0.1035" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_check2.xml" value="0.103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_check2_all.xml" value="0.233" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_check2_all_readied.xml" value="0.233" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_check_circle_24dp.xml" value="0.103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_email.xml" value="0.136" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_favorite.xml" value="0.103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_favorite_red.xml" value="0.103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_like.xml" value="0.233" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_logo.xml" value="0.103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_logo_big.xml" value="0.103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_notifications.xml" value="0.233" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_office.xml" value="0.1065" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_profile.xml" value="0.233" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_share.xml" value="0.233" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/ic_vk.xml" value="0.136" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/image_loading.xml" value="0.1065" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/logo.xml" value="0.103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/drawable/test_custom_background.xml" value="0.1065" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/activity_main.xml" value="0.12552083333333333" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/alert_dialog_listview_search.xml" value="0.33" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/custom_dialog.xml" value="0.2" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/dialog_more.xml" value="0.13272543059777103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/dialog_reply.xml" value="0.12552083333333333" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/dialog_write_review.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/dp_example.xml" value="0.12552083333333333" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_agent_ad_listing.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_chat.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_chat_person.xml" value="0.17074275362318841" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_edit_profile.xml" value="0.12552083333333333" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_login.xml" value="0.1544943820224719" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_map.xml" value="0.25" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_notification.xml" value="0.23433874709976799" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_panorama.xml" value="0.13069908814589665" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_policy.xml" value="0.19021739130434784" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_property_detail.xml" value="0.5" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_review.xml" value="0.33" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_search.xml" value="0.3497942386831276" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_signup.xml" value="0.25" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_splash.xml" value="0.27291666666666664" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_start_up.xml" value="0.33" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_verify_account.xml" value="0.25" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_welcome1.xml" value="0.25" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_welcome2.xml" value="0.25" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/fragment_welcome3.xml" value="0.2843601895734597" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/item_listview_multiple.xml" value="0.27291666666666664" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/item_listview_single.xml" value="0.27291666666666664" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/jz_dialog_volume.xml" value="0.1" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/jz_layout_std.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/notification_template_custom_big.xml" value="0.5" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/notification_template_icon_group.xml" value="0.27291666666666664" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/notification_template_part_chronometer.xml" value="0.67" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_best_property.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_centered_image.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_centered_video.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_chat_date.xml" value="0.13069908814589665" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_chat_from.xml" value="0.13069908814589665" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_chat_head.xml" value="0.25" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_chat_list.xml" value="0.67" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_chat_to.xml" value="0.67" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_featured_property.xml" value="0.25" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_header_banner.xml" value="0.13272543059777103" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_listing.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_notification.xml" value="0.33" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_review.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_testimonial.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_video.xml" value="0.1936619718309859" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/row_video_image.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/sdp_example.xml" value="0.12552083333333333" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/slider.xml" value="0.2172043010752688" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/textview_for_spinner.xml" value="0.27291666666666664" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/toolbar_dark_arrow.xml" value="0.12552083333333333" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/toolbar_dark_arrow_with_avatar.xml" value="0.26875" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/toolbar_light_arrow.xml" value="0.25" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/toolbar_light_arrow_primary.xml" value="0.13069908814589665" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/toolbar_with_shadow.xml" value="0.13069908814589665" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/video.xml" value="0.19021739130434784" />
+        <entry key="..\:/perspektiva24/app/src/main/res/layout/view_collapsed_notification.xml" value="0.67" />
+        <entry key="..\:/perspektiva24/app/src/main/res/menu/example_menu.xml" value="0.24722222222222223" />
+        <entry key="..\:/perspektiva24/app/src/main/res/menu/example_menu2.xml" value="0.24722222222222223" />
+        <entry key="..\:/perspektiva24/app/src/main/res/menu/menu_dashboard.xml" value="0.22" />
+        <entry key="..\:/perspektiva24/app/src/main/res/menu/menu_dashboard1.xml" value="0.26666666666666666" />
+        <entry key="..\:/perspektiva24/app/src/main/res/menu/menu_header.xml" value="0.2601851851851852" />
+        <entry key="..\:/perspektiva24/app/src/main/res/menu/menu_header_other.xml" value="0.2601851851851852" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:tag="layout/fragment_start_up_0">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.2"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_bottom" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@id/image_welcome"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/_20sdp"
+                android:src="@drawable/ic_startup" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:letterSpacing="0.02"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:text="@string/discover_your_ndream_flat_here"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                tools:ignore="UselessParent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="0.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_40sdp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/signOut"
+                            android:layout_width="0.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:backgroundTint="@color/variant"
+                            android:elevation="0.0dip"
+                            android:insetTop="0.0dip"
+                            android:insetBottom="0.0dip"
+                            android:tag="binding_1"
+                            android:text="@string/log_in_or_register"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/text_size_h4"
+                            android:textStyle="bold"
+                            app:cornerRadius="5.0dip"
+                            app:elevation="0.0dip" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        >
+                        <TextView
+                            android:id="@+id/skip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/variant"
+                            android:tag="binding_1"
+                            android:text="@string/skip"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_h4"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

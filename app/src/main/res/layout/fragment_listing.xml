@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="layout/fragment_listing_0">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/variantSecondary"
+        android:contentDescription="@string/todo" />
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar_light_arrow" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recycler_view_listing"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="@dimen/section_spacing"
+        android:background="@drawable/background_corner_radius_top"
+        android:padding="@dimen/inner_spacing" />
+</RelativeLayout>

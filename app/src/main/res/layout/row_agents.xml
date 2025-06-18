@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/section_spacing"
+    android:tag="layout/row_agents_0"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="0.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:tag="binding_1">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/slider3"
+            android:tag="binding_2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/section_spacing"
+            android:paddingLeft="@dimen/section_spacing"
+            android:paddingTop="@dimen/inner_spacing"
+            android:paddingRight="@dimen/section_spacing"
+            android:tag="binding_3"
+            android:textColor="@color/variant"
+            android:textSize="@dimen/text_size_h5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/section_spacing"
+            android:paddingEnd="@dimen/section_spacing"
+            android:paddingBottom="@dimen/section_spacing"
+            android:tag="binding_4"
+            android:textColor="@color/textHintColor"
+            android:textSize="@dimen/text_size_h6" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

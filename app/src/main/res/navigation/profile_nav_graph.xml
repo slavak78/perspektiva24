@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/profile_nav_graph"
+    app:startDestination="@id/profileFragment">
+    <fragment
+        android:id="@id/profileFragment"
+        android:name="ru.crmkurgan.main.ui.dashboard.ProfileFragment"
+        android:label="ProfileFragment">
+        <action
+            android:id="@id/action_profileFragment_to_listingFragment"
+            app:destination="@id/listingFragment" />
+        <action
+            android:id="@id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@id/action_profileFragment_to_postAdFragment"
+            app:destination="@id/postAdFragment" />
+        <action
+            android:id="@id/action_profileFragment_to_allReviewFragment"
+            app:destination="@id/allReviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/listingFragment"
+        android:name="ru.crmkurgan.main.ui.profile.ListingFragment"
+        android:label="ListingFragment">
+        <action
+            android:id="@id/action_listingFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/editProfileFragment"
+        android:name="ru.crmkurgan.main.ui.profile.EditProfileFragment"
+        android:label="EditProfileFragment" />
+    <fragment
+        android:id="@id/postAdFragment"
+        android:name="ru.crmkurgan.main.ui.profile.PostAdFragment"
+        android:label="PostAdFragment" />
+    <fragment
+        android:id="@id/allReviewFragment"
+        android:name="ru.crmkurgan.main.ui.profile.AllReviewFragment"
+        android:label="AllReviewFragment" />
+    <action
+        android:id="@id/action_global_go_to_property_detail_fragment"
+        app:destination="@id/propertyFragment" />
+    <action
+        android:id="@id/action_global_go_to_property_edit_fragment"
+        app:destination="@id/postAdFragment" />
+    <fragment
+        android:id="@id/propertyFragment"
+        android:name="ru.crmkurgan.main.ui.property.PropertyFragment"
+        android:label="PropertyFragment" />
+    <fragment
+        android:id="@id/notificationFragment"
+        android:name="ru.crmkurgan.main.ui.property.NotificationFragment"
+        android:label="NotifiactionFragment" />
+    <action
+        android:id="@id/goToNotification"
+        app:destination="@id/notificationFragment"
+        app:enterAnim="@anim/slide_up"
+        app:exitAnim="@anim/no_animation"
+        app:popEnterAnim="@anim/no_animation"
+        app:popExitAnim="@anim/slide_down" />
+    <fragment
+        android:id="@id/agentFragment"
+        android:name="ru.crmkurgan.main.ui.agent.AgentFragment"
+        android:label="AgentFragment">
+        <action
+            android:id="@id/action_agentFragment_to_propertyFragment"
+            app:destination="@id/propertyFragment" />
+    </fragment>
+    <action
+        android:id="@id/goToAgentFragment"
+        app:destination="@id/agentFragment" />
+    <action
+        android:id="@id/goto_chat"
+        app:destination="@id/chatPersonFragment" />
+    <fragment
+        android:id="@id/chatPersonFragment"
+        android:name="ru.crmkurgan.main.ui.chat.ChatPersonFragment"
+        android:label="ChatPersonFragment" />
+</navigation>

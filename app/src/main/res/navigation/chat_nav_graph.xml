@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/chat_nav_graph"
+    app:startDestination="@id/chatFragment">
+    <fragment
+        android:id="@id/chatFragment"
+        android:name="ru.crmkurgan.main.ui.dashboard.ChatFragment"
+        android:label="ChatFragment">
+        <action
+            android:id="@id/action_chatFragment_to_chatPersonFragment"
+            app:destination="@id/chatPersonFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/chatPersonFragment"
+        android:name="ru.crmkurgan.main.ui.chat.ChatPersonFragment"
+        android:label="ChatPersonFragment" />
+    <fragment
+        android:id="@id/notificationFragment"
+        android:name="ru.crmkurgan.main.ui.property.NotificationFragment"
+        android:label="NotificationFragment" />
+    <action
+        android:id="@id/goToNotification"
+        app:destination="@id/notificationFragment"
+        app:enterAnim="@anim/slide_up"
+        app:exitAnim="@anim/no_animation"
+        app:popEnterAnim="@anim/no_animation"
+        app:popExitAnim="@anim/slide_down" />
+</navigation>

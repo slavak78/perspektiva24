@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginEnd="@dimen/section_spacing"
+    android:tag="layout/row_header_banner_0"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <player.JzvdStd
+        android:id="@+id/video"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_150sdp" />
+
+</androidx.cardview.widget.CardView>

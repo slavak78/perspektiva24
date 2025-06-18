@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="@integer/mtrl_calendar_header_orientation"
+    tools:ignore="PrivateResource">
+
+    <include layout="@layout/mtrl_picker_header_dialog" />
+
+    <LinearLayout
+        android:id="@id/mtrl_calendar_main_pane"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@id/mtrl_calendar_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:paddingStart="@dimen/mtrl_calendar_content_padding"
+            android:paddingLeft="@dimen/mtrl_calendar_content_padding"
+            android:paddingEnd="@dimen/mtrl_calendar_content_padding"
+            android:paddingRight="@dimen/mtrl_calendar_content_padding"
+            android:paddingBottom="@dimen/mtrl_calendar_bottom_padding" />
+
+        <include
+            layout="@layout/mtrl_picker_actions"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mtrl_calendar_action_height" />
+    </LinearLayout>
+</LinearLayout>

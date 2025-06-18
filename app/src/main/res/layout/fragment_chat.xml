@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="layout/fragment_chat_0">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/variantSecondary"
+        android:contentDescription="@string/todo" />
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar_dark_arrow" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recycler_view_chats"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="@dimen/section_spacing"
+        android:layout_marginEnd="@dimen/section_spacing"
+        android:background="@drawable/background_corner_radius_top"
+        android:paddingStart="@dimen/inner_spacing"
+        android:paddingEnd="@dimen/inner_spacing" />
+
+    <RelativeLayout
+        android:id="@+id/noConnection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/noConnection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:paddingStart="@dimen/_40sdp"
+                android:paddingEnd="@dimen/_40sdp"
+                android:text="@string/check"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h4" />
+
+            <TextView
+                android:id="@+id/repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/repeat"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/text_size_h3" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

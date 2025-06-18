@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:id="@id/layout_home"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:tag="layout/fragment_home_0">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="binding_1">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@color/variant"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop" />
+
+            <include
+                android:id="@id/toolbar"
+                layout="@layout/toolbar_light_arrow" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:orientation="vertical">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@id/recycler_view_header_banner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/section_spacing"
+                    android:layout_marginBottom="@dimen/section_spacing"
+                    android:paddingStart="@dimen/section_spacing"
+                    android:paddingEnd="0.0dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/section_spacing"
+                    android:layout_marginEnd="@dimen/section_spacing"
+                    android:orientation="horizontal">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginStart="@dimen/inner_spacing"
+                        android:layout_weight="0.15"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/filter"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@color/variant"
+                            android:contentDescription="@string/todo"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/ic_filter"
+                            android:tag="binding_2"
+                            app:tint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/recycler_view_category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/section_spacing" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/section_spacing"
+                    android:layout_marginTop="@dimen/section_spacing"
+                    android:layout_marginEnd="@dimen/section_spacing">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/top_cities"
+                        android:textColor="@color/variant"
+                        android:textSize="@dimen/text_size_h3"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:tag="binding_3"
+                        android:text="@string/view_more"
+                        android:textColor="@color/secondary"
+                        android:textSize="@dimen/text_size_h5"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/recycler_view_cities"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/section_spacing" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/section_spacing"
+                    android:layout_marginTop="@dimen/section_spacing"
+                    android:layout_marginEnd="@dimen/section_spacing">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/featured_property"
+                        android:textColor="@color/variant"
+                        android:textSize="@dimen/text_size_h3"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:tag="binding_4"
+                        android:text="@string/view_more"
+                        android:textColor="@color/secondary"
+                        android:textSize="@dimen/text_size_h5"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/recycler_view_featured_property"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/inner_spacing"
+                    android:nestedScrollingEnabled="false" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/section_spacing"
+                    android:layout_marginTop="@dimen/section_spacing"
+                    android:layout_marginEnd="@dimen/section_spacing">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/best_deals"
+                        android:textColor="@color/variant"
+                        android:textSize="@dimen/text_size_h3"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:tag="binding_5"
+                        android:text="@string/view_more"
+                        android:textColor="@color/secondary"
+                        android:textSize="@dimen/text_size_h5"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/recycler_view_best_deals"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/inner_spacing"
+                    android:nestedScrollingEnabled="false" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/section_spacing"
+                    android:layout_marginLeft="@dimen/section_spacing"
+                    android:layout_marginRight="@dimen/section_spacing"
+                    android:background="@drawable/background_corner_radius"
+                    android:backgroundTint="#ffe5f8ed"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/section_spacing"
+                    android:paddingStart="@dimen/section_spacing"
+                    android:paddingTop="@dimen/section_spacing"
+                    android:paddingEnd="0.0dip"
+                    android:paddingBottom="@dimen/section_spacing">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="0.0dip"
+                        android:paddingEnd="@dimen/section_spacing"
+                        android:text="@string/our_agents"
+                        android:textColor="@color/variant"
+                        android:textSize="@dimen/text_size_h3"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@id/recycler_view_agents"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/inner_spacing" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/section_spacing"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/banner_ad"
+                        android:tag="binding_6" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/section_spacing"
+                    android:paddingTop="@dimen/section_spacing"
+                    android:paddingEnd="@dimen/section_spacing"
+                    android:text="@string/what_clients_say"
+                    android:textColor="@color/variant"
+                    android:textSize="@dimen/text_size_h3"
+                    android:textStyle="bold" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@id/recycler_view_testimonial"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingTop="@dimen/inner_spacing"
+                    android:paddingBottom="@dimen/inner_spacing" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_margin="@dimen/section_spacing">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="0.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.25"
+                                android:contentDescription="@string/todo"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/slider5" />
+
+                            <ImageView
+                                android:layout_width="0.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_2sdp"
+                                android:layout_weight="0.25"
+                                android:contentDescription="@string/todo"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/slider2" />
+
+                            <ImageView
+                                android:layout_width="0.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_weight="0.25"
+                                android:contentDescription="@string/todo"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/slider3" />
+
+                            <ImageView
+                                android:layout_width="0.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.25"
+                                android:contentDescription="@string/todo"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/slider4" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/white"
+                        android:tag="binding_7"
+                        android:text="@string/follow_on_instagram"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textHintColor"
+                        app:elevation="@dimen/_2sdp"
+                        app:icon="@drawable/ic_vk"
+                        app:iconGravity="textStart"
+                        app:iconSize="@dimen/_15sdp"
+                        app:iconTint="@color/textHintColor" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/noConnection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/noConnection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:paddingStart="@dimen/_40sdp"
+                android:paddingEnd="@dimen/_40sdp"
+                android:text="@string/check"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h4" />
+
+            <TextView
+                android:id="@+id/repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/repeat"
+                android:textColor="@color/variant"
+                android:textSize="@dimen/text_size_h3" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    </RelativeLayout>

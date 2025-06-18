@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_category"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="layout/fragment_category_0">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/layout_nested_search"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:tag="binding_1">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@color/variantSecondary"
+                android:contentDescription="@string/todo" />
+
+            <include
+                android:id="@id/toolbar"
+                layout="@layout/toolbar_light_arrow" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/toolbar"
+                android:layout_margin="@dimen/section_spacing"
+                android:background="@drawable/background_corner_radius_top">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/recycler_view_results"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_corner_radius_top"
+                    android:nestedScrollingEnabled="false"
+                    android:padding="@dimen/inner_spacing" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/inner_spacing"
+    android:tag="layout/row_listing_0"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="0.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="#80f1f1f1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/slider3"
+            android:tag="binding_1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/inner_spacing"
+            android:paddingEnd="@dimen/inner_spacing">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/inner_spacing"
+                android:tag="binding_2"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_size_h5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingStart="@dimen/inner_spacing"
+                android:paddingEnd="@dimen/inner_spacing"
+                android:tag="binding_3"
+                android:textColor="@color/variant"
+                android:textSize="@dimen/text_size_h4"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/inner_spacing">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="RelativeOverlap">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/starting_from"
+                        android:textSize="@dimen/text_size_h5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="binding_4"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_size_h5"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_more"
+                    android:tag="binding_5"
+                    app:tint="@color/textHintColor" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

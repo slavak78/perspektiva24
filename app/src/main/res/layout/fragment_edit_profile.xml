@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="layout/fragment_edit_profile_0">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:tag="binding_1">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@color/variantSecondary"
+            android:contentDescription="@string/todo" />
+
+        <include
+            android:id="@id/toolbar"
+            layout="@layout/toolbar_light_arrow" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="@dimen/section_spacing"
+            android:layout_marginStart="@dimen/section_spacing"
+            android:layout_marginTop="@dimen/section_spacing"
+            android:layout_marginEnd="@dimen/section_spacing"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:background="@drawable/background_corner_radius_top"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:textColor="@color/variant"
+                android:textSize="@dimen/text_size_h4"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="@dimen/_50sdp">
+
+                <ImageView
+                    android:id="@id/image_pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/agent1" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginBottom="@dimen/section_spacing"
+                android:backgroundTint="@color/variant"
+                android:insetTop="0.0dip"
+                android:insetBottom="0.0dip"
+                android:tag="binding_2"
+                android:text="@string/upload_photo"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_h6"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_5sdp"
+                app:elevation="0.0dip"
+                app:icon="@drawable/ic_upload" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_fullname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/fullname"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/email_address"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/address"
+                    android:inputType="textPostalAddress"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_zip_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/zip_code"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/city"
+                    android:inputType="textPostalAddress"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_country"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/country"
+                    android:inputType="textPostalAddress"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_bio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:gravity="start"
+                    android:hint="@string/your_bio"
+                    android:inputType="textMultiLine"
+                    android:minHeight="@dimen/_100sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginBottom="@dimen/section_spacing"
+                android:backgroundTint="@color/variant"
+                android:insetTop="0.0dip"
+                android:insetBottom="0.0dip"
+                android:tag="binding_3"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_h6"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_5sdp"
+                app:elevation="0.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DarkStatusBar" parent="@style/Theme.Realshield">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="LightStatusBar" parent="@style/Theme.Realshield">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.Realshield" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="fontFamily">@font/google_sans</item>
+        <item name="android:statusBarColor">@color/variant</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorSecondary">@color/variant</item>
+        <item name="colorSecondaryVariant">@color/variant</item>
+    </style>
+
+    <style name="NoBackgroundDialogTheme" parent="@style/Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="TitleBarTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_h3</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="fontFamily">@font/google_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarThemeLight" parent="@style/Widget.MaterialComponents.ActionBar.Solid">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarThemeLightPrimary" parent="@style/Widget.MaterialComponents.ActionBar.Primary">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+
+    <style name="jz_style_dialog_progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/jz_popup_toast_anim</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="jz_popup_toast_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="pop_animation">
+        <item name="android:windowEnterAnimation">@anim/pop_from_bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_from_bottom_anim_out</item>
+    </style>
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/indicator</item>
+    </style>
+</resources>

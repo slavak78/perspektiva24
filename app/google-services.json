@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "111674659367",
+    "firebase_url": "https://crmkurgan-default-rtdb.firebaseio.com",
+    "project_id": "crmkurgan",
+    "storage_bucket": "crmkurgan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111674659367:android:14e0ba4c4ae893d75cb402",
+        "android_client_info": {
+          "package_name": "ru.crmkurgan.main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111674659367-7mu6744n4u9hs8v1rc3kci1rhj4hnscr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.crmkurgan.main",
+            "certificate_hash": "b0516ebe1e9227c2d3ab85c975e107105abbebfb"
+          }
+        },
+        {
+          "client_id": "111674659367-o7oiojaokqigm86orqdb22sad71bp804.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.crmkurgan.main",
+            "certificate_hash": "347973ef7fe03da4b6d7ad3828bbda0d94c7db19"
+          }
+        },
+        {
+          "client_id": "111674659367-f9gla7ltpqr6da30b7nttgsv23t8os53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLNlfzgIdQjAgZojSRg8FcZ9Xe9pGyBeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111674659367-f9gla7ltpqr6da30b7nttgsv23t8os53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

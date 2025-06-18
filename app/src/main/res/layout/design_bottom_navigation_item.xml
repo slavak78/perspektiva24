@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@id/navigation_bar_item_icon_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/design_bottom_navigation_margin"
+        android:layout_marginBottom="@dimen/design_bottom_navigation_margin"
+        android:duplicateParentState="true">
+
+        <View
+            android:id="@id/navigation_bar_item_active_indicator_view"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@id/navigation_bar_item_icon_view"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:duplicateParentState="true" />
+    </FrameLayout>
+
+    <com.google.android.material.internal.BaselineLayout
+        android:id="@id/navigation_bar_item_labels_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:duplicateParentState="true"
+        android:paddingBottom="@dimen/design_bottom_navigation_label_padding"
+        tools:ignore="PrivateResource">
+
+        <TextView
+            android:id="@id/navigation_bar_item_small_label_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/design_bottom_navigation_text_size" />
+
+        <TextView
+            android:id="@id/navigation_bar_item_large_label_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/design_bottom_navigation_active_text_size"
+            android:visibility="invisible" />
+    </com.google.android.material.internal.BaselineLayout>
+</merge>

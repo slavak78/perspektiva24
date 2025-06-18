@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="layout/fragment_verify_account_0">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar_dark_arrow" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.2"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_bottom" />
+
+    <LinearLayout
+        android:id="@id/layout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="@dimen/section_spacing">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_h2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="@dimen/inner_spacing"
+            android:text="@string/please_enter_the_code_nsent_in_your_email"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_h3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/layout_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_header"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/section_spacing">
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:digits="\ 1234567890"
+            android:focusable="true"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:paddingStart="@dimen/section_spacing"
+            android:paddingEnd="@dimen/section_spacing"
+            android:textColor="@color/variant"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_size_h2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/button_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/section_spacing"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:backgroundTint="@color/variant"
+            android:insetTop="0.0dip"
+            android:insetBottom="0.0dip"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_h5"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/_5sdp"
+            app:elevation="0.0dip" />
+        <TextView
+            android:id="@+id/repeatText"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/repeat"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/section_spacing"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:backgroundTint="@color/variant"
+            android:insetTop="0.0dip"
+            android:insetBottom="0.0dip"
+            android:text="@string/repeat1"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size_h5"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/_5sdp"
+            app:elevation="0.0dip"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="layout/fragment_add_listing_0">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:tag="binding_1">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@color/variantSecondary"
+            android:contentDescription="@string/todo" />
+
+        <include
+            android:id="@id/toolbar"
+            layout="@layout/toolbar_light_arrow" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="@dimen/section_spacing"
+            android:layout_marginStart="@dimen/section_spacing"
+            android:layout_marginTop="@dimen/section_spacing"
+            android:layout_marginEnd="@dimen/section_spacing"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:background="@drawable/background_corner_radius_top"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_listing"
+                android:textColor="@color/variant"
+                android:textSize="@dimen/text_size_h4"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/section_spacing"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@id/image_pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/destination3" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginBottom="@dimen/section_spacing"
+                android:backgroundTint="@color/variant"
+                android:insetTop="0.0dip"
+                android:insetBottom="0.0dip"
+                android:tag="binding_2"
+                android:text="@string/upload_photo"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_h6"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_5sdp"
+                app:elevation="0.0dip"
+                app:icon="@drawable/ic_upload" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/title"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/starting_price"
+                    android:inputType="phone"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/area_size_sq_ft"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_bathroom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/no_of_bathroom"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_bedroom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/no_of_bedroom"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_built"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:hint="@string/year_built"
+                    android:inputType="date"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/inner_spacing"
+                android:layout_marginTop="@dimen/inner_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0.0dip"
+                    android:paddingEnd="@dimen/section_spacing"
+                    android:text="@string/garage"
+                    android:textColor="@color/variant"
+                    android:textSize="@dimen/text_size_h5" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/inner_spacing"
+                android:layout_marginTop="@dimen/inner_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0.0dip"
+                    android:paddingEnd="@dimen/section_spacing"
+                    android:text="@string/parking"
+                    android:textColor="@color/variant"
+                    android:textSize="@dimen/text_size_h5" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/inner_spacing"
+                android:paddingTop="@dimen/section_spacing"
+                android:paddingEnd="@dimen/section_spacing"
+                android:paddingBottom="@dimen/section_spacing"
+                android:text="@string/amentities"
+                android:textColor="@color/variant"
+                android:textSize="@dimen/text_size_h5"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifi" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/air_conditioning" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terrace" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lawn" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_cable" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/edit_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:gravity="start"
+                    android:hint="@string/description"
+                    android:inputType="textMultiLine"
+                    android:minHeight="@dimen/_100sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginBottom="@dimen/section_spacing"
+                android:backgroundTint="@color/variant"
+                android:insetTop="0.0dip"
+                android:insetBottom="0.0dip"
+                android:tag="binding_3"
+                android:text="@string/post_ad"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_h6"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_5sdp"
+                app:elevation="0.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

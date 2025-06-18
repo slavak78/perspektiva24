@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_75sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/inner_spacing"
+    android:tag="layout/row_category_0"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="0.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_border_edittext"
+        android:orientation="vertical"
+        android:tag="binding_1">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/inner_spacing"
+            android:paddingEnd="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:tag="binding_2"
+            app:tint="@color/secondary"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/inner_spacing"
+            android:tag="binding_3"
+            android:textColor="@color/variant"
+            android:textSize="@dimen/text_size_h5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/inner_spacing"
+            android:paddingEnd="@dimen/inner_spacing"
+            android:paddingBottom="@dimen/section_spacing"
+            android:tag="binding_4"
+            android:textColor="@color/textHintColor"
+            android:textSize="@dimen/text_size_h6" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

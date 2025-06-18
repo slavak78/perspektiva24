@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="layout/dialog_more_0">
+
+    <LinearLayout
+        android:id="@id/footer_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:tag="binding_1"
+        android:weightSum="6.0">
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/primary"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.0"
+            android:gravity="center_vertical"
+            android:text="@string/edit"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1.0"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="#ffcccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:weightSum="6.0">
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/primary"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.0"
+            android:gravity="center_vertical"
+            android:text="@string/delete"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1.0"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="#ffcccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:tag="binding_2"
+        android:weightSum="6.0">
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_view"
+            app:tint="@color/primary"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="4.0"
+            android:gravity="center_vertical"
+            android:text="@string/view"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1.0"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</LinearLayout>

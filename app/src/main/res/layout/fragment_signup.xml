@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="layout/fragment_signup_0">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar_dark_arrow" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.2"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_bottom" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <LinearLayout
+            android:id="@id/layout_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="@dimen/section_spacing">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in_or_register"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h2"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout_form"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_header"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/section_spacing">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/inner_spacing"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxStrokeWidth="0.0dip"
+                app:boxStrokeWidthFocused="0.0dip"
+                app:hintEnabled="false">
+
+                <maskedEditText.MaskedEditText
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_border_edittext"
+                    android:inputType="phone"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_h4"
+                    mask:allowed_chars="1234567890"
+                    mask:mask="+7 (###) ###-##-##" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@id/button_sign_up"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginBottom="@dimen/section_spacing"
+                android:backgroundTint="@color/variant"
+                android:insetTop="0.0dip"
+                android:insetBottom="0.0dip"
+                android:tag="binding_2"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_h5"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_5sdp"
+                app:elevation="0.0dip" />
+
+            <TextView
+                android:id="@+id/policy"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

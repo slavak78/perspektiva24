@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/layout_rating_dialog"
+    style="@style/NoBackgroundDialogTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/section_spacing"
+    android:tag="layout/dialog_reply_0">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/section_spacing"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/write_reponse"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_size_h4"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@id/image_close"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_back_down"
+            app:tint="@color/black" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/section_spacing"
+        android:paddingStart="@dimen/inner_spacing"
+        android:paddingEnd="@dimen/inner_spacing"
+        android:text="@string/reply_to_user"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_h5"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/section_spacing"
+        android:layout_marginEnd="@dimen/section_spacing"
+        android:layout_marginBottom="@dimen/inner_spacing"
+        android:textAlignment="textStart"
+        app:boxCornerRadiusBottomEnd="@dimen/_20sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_20sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_20sdp"
+        app:boxCornerRadiusTopStart="@dimen/_20sdp"
+        app:boxStrokeWidth="0.0dip"
+        app:boxStrokeWidthFocused="0.0dip"
+        app:cardElevation="0.0dip"
+        app:hintEnabled="false">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:backgroundTint="#80f1f1f1"
+            android:gravity="start"
+            android:hint="@string/write_here"
+            android:inputType="textMultiLine"
+            android:maxLength="400"
+            android:minHeight="@dimen/_150sdp"
+            android:padding="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorBlackFaded"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_h5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@id/button_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/section_spacing"
+        android:layout_marginTop="@dimen/section_spacing"
+        android:layout_marginEnd="@dimen/section_spacing"
+        android:layout_marginBottom="@dimen/section_spacing"
+        android:backgroundTint="@color/variant"
+        android:insetTop="0.0dip"
+        android:insetBottom="0.0dip"
+        android:text="@string/submit_review"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_h6"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/_5sdp"
+        app:elevation="0.0dip" />
+</LinearLayout>

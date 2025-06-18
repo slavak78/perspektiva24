@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:tag="layout/fragment_welcome1_0">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.2"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_bottom" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@id/image_welcome"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/_20sdp"
+                android:src="@drawable/ic_welcome1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:letterSpacing="0.02"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:text="@string/find_your_dream_apartment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h1"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_circle"
+                    app:tint="@color/primary" />
+
+                <ImageView
+                    android:layout_width="@dimen/_6sdp"
+                    android:layout_height="@dimen/_6sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/inner_spacing"
+                    android:layout_marginEnd="@dimen/inner_spacing"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_circle"
+                    app:tint="@color/grey" />
+
+                <ImageView
+                    android:layout_width="@dimen/_6sdp"
+                    android:layout_height="@dimen/_6sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_circle"
+                    app:tint="@color/grey" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/variant"
+                    android:tag="binding_1"
+                    android:text="@string/skip"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_h4"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/variant"
+                    android:insetTop="0.0dip"
+                    android:insetBottom="0.0dip"
+                    android:paddingStart="@dimen/_25sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:tag="binding_2"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_h4"
+                    android:textStyle="bold"
+                    app:cornerRadius="@dimen/_5sdp"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

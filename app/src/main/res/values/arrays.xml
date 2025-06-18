@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Location">
+        <item>Select Location</item>
+        <item>Miami</item>
+        <item>New York</item>
+        <item>Flo-Rida</item>
+        <item>Cuba</item>
+    </string-array>
+    <string-array name="type">
+        <item>Вторичное жилье</item>
+        <item>Дома, коттеджи, дачи</item>
+        <item>Коммерческая недвижимость</item>
+    </string-array>
+</resources>

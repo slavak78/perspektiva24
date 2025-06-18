@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/layout_search"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="layout/fragment_notification_0">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/layout_nested_search"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:tag="binding_1">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@color/variantSecondary"
+                android:contentDescription="@string/todo" />
+
+            <include
+                android:id="@id/toolbar"
+                layout="@layout/toolbar_light_arrow" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/toolbar"
+                android:layout_margin="@dimen/section_spacing"
+                android:background="@drawable/background_corner_radius_top">
+
+                <TextView
+                    android:id="@+id/new1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:paddingHorizontal="@dimen/section_spacing"
+                    android:paddingLeft="@dimen/section_spacing"
+                    android:paddingTop="@dimen/section_spacing"
+                    android:paddingRight="@dimen/section_spacing"
+                    android:text=""
+                    android:textColor="@color/variant" />
+
+                <TextView
+                    android:id="@id/text_clear_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingHorizontal="@dimen/section_spacing"
+                    android:paddingLeft="@dimen/section_spacing"
+                    android:paddingTop="@dimen/section_spacing"
+                    android:paddingRight="@dimen/section_spacing"
+                    android:tag="binding_2"
+                    android:text="@string/clear_all"
+                    android:textColor="@color/variant"
+                    android:visibility="invisible"
+                    tools:ignore="RelativeOverlap" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@id/recycler_view_notification"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/text_clear_all"
+                    android:nestedScrollingEnabled="false"
+                    android:padding="@dimen/section_spacing" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

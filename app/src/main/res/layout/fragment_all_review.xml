@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_home"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:tag="layout/fragment_all_review_0">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:tag="binding_1">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@color/variantSecondary"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop" />
+
+        <include
+            android:id="@id/toolbar"
+            layout="@layout/toolbar_light_arrow" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="@dimen/section_spacing"
+            android:layout_marginTop="@dimen/section_spacing"
+            android:layout_marginEnd="@dimen/section_spacing"
+            android:background="@drawable/background_corner_radius_top"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/inner_spacing"
+            android:paddingTop="@dimen/section_spacing"
+            android:paddingEnd="@dimen/inner_spacing">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/section_spacing"
+                android:text="@string/miami_beach_7300_b711_cross_road"
+                android:textColor="@color/variant"
+                android:textSize="@dimen/text_size_h5"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recycler_view_reviews"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inner_spacing"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/section_spacing"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:text="@string/london_b400_b7hf_cross_road"
+                android:textColor="@color/variant"
+                android:textSize="@dimen/text_size_h5"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/recycler_view_reviews2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inner_spacing"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

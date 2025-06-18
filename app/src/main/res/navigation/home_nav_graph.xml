@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@id/homeFragment"
+        android:name="ru.crmkurgan.main.ui.dashboard.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@id/action_homeFragment_to_propertyFragment"
+            app:destination="@id/propertyFragment" />
+        <action
+            android:id="@id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@id/action_homeFragment_to_topCitiesFragment"
+            app:destination="@id/topCitiesFragment" />
+        <action
+            android:id="@id/action_homeFragment_to_search_nav_graph"
+            app:destination="@id/search_nav_graph"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@id/propertyFragment"
+        android:name="ru.crmkurgan.main.ui.property.PropertyFragment"
+        android:label="PropertyFragment">
+        <action
+            android:id="@id/action_propertyFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@id/action_propertyFragment_self"
+            app:destination="@id/propertyFragment" />
+        <action
+            android:id="@id/action_propertyFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@id/action_propertyFragment_to_sliderFragment"
+            app:destination="@id/sliderFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/reviewFragment"
+        android:name="ru.crmkurgan.main.ui.review.ReviewFragment"
+        android:label="ReviewFragment" />
+    <fragment
+        android:id="@id/mapFragment"
+        android:name="ru.crmkurgan.main.ui.property.MapFragment"
+        android:label="mapFragment">
+        <action
+            android:id="@id/action_mapFragment_to_panoramaFragment"
+            app:destination="@id/panoramaFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/panoramaFragment"
+        android:name="ru.crmkurgan.main.ui.property.PanoramaFragment"
+        android:label="panoramaFragment" />
+    <fragment
+        android:id="@id/sliderFragment"
+        android:name="ru.crmkurgan.main.ui.property.SliderFragment"
+        android:label="sliderFragment">
+    <action
+        android:id="@id/action_sliderFragment_to_videoFragment"
+        app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/videoFragment"
+        android:name="ru.crmkurgan.main.ui.property.VideoFragment"
+        android:label="videoFragment"/>
+    <fragment
+        android:id="@id/categoryFragment"
+        android:name="ru.crmkurgan.main.ui.category.CategoryFragment"
+        android:label="CategoryFragment">
+        <action
+            android:id="@id/action_categoryFragment_to_propertyFragment"
+            app:destination="@id/propertyFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/topCitiesFragment"
+        android:name="ru.crmkurgan.main.ui.category.TopCitiesFragment"
+        android:label="TopCitiesFragment">
+        <action
+            android:id="@id/action_topCitiesFragment_to_propertyFragment"
+            app:destination="@id/propertyFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/chatPersonFragment"
+        android:name="ru.crmkurgan.main.ui.chat.ChatPersonFragment"
+        android:label="ChatPersonFragment" />
+    <action
+        android:id="@id/goto_chat"
+        app:destination="@id/chatPersonFragment" />
+    <include app:graph="@navigation/search_nav_graph" />
+    <include app:graph="@navigation/chat_nav_graph" />
+    <fragment
+        android:id="@id/notificationFragment"
+        android:name="ru.crmkurgan.main.ui.property.NotificationFragment"
+        android:label="NotificationFragment" />
+    <action
+        android:id="@id/goToNotification"
+        app:destination="@id/notificationFragment" />
+    <fragment
+        android:id="@id/agentFragment"
+        android:name="ru.crmkurgan.main.ui.agent.AgentFragment"
+        android:label="AgentFragment">
+        <action
+            android:id="@id/action_agentFragment_to_propertyFragment"
+            app:destination="@id/propertyFragment" />
+    </fragment>
+    <action
+        android:id="@id/goToAgentFragment"
+        app:destination="@id/agentFragment" />
+</navigation>

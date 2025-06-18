@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <item android:alpha="@dimen/material_emphasis_medium" android:color="@color/m3_sys_color_dynamic_light_on_background" android:state_enabled="true" android:state_pressed="true" tools:ignore="PrivateResource" />
+    <item android:alpha="@dimen/material_emphasis_disabled" android:color="@color/m3_sys_color_dynamic_light_on_background" tools:ignore="PrivateResource" />
+</selector>

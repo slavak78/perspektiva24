@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/form_navigation_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@id/splashFragment"
+        android:name="ru.crmkurgan.main.ui.form.SplashFragment"
+        android:label="SplashFragment">
+        <action
+            android:id="@id/action_splashFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment1"
+            app:popUpTo="@id/form_navigation_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@id/action_splashFragment_to_startUpFragment"
+            app:destination="@id/startUpFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/form_navigation_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@id/welcomeFragment1"
+        android:name="ru.crmkurgan.main.ui.form.WelcomeFragment1"
+        android:label="WelcomeFragment1">
+        <action
+            android:id="@id/action_welcomeFragment1_to_welcomeFragment3"
+            app:destination="@id/welcomeFragment3" />
+        <action
+            android:id="@id/action_welcomeFragment1_to_startUpFragment"
+            app:destination="@id/startUpFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/form_navigation_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@id/welcomeFragment2"
+        android:name="ru.crmkurgan.main.ui.form.WelcomeFragment2"
+        android:label="WelcomeFragment2">
+        <action
+            android:id="@id/action_welcomeFragment2_to_startUpFragment"
+            app:destination="@id/startUpFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/form_navigation_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@id/welcomeFragment3"
+        android:name="ru.crmkurgan.main.ui.form.WelcomeFragment3"
+        android:label="WelcomeFragment3">
+        <action
+            android:id="@id/action_welcomeFragment3_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment2" />
+        <action
+            android:id="@id/action_welcomeFragment3_to_startUpFragment"
+            app:destination="@id/startUpFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/form_navigation_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@id/startUpFragment"
+        android:name="ru.crmkurgan.main.ui.form.StartUpFragment"
+        android:label="StartUpFragment">
+        <action
+            android:id="@id/action_startUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@id/action_startUpFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/signUpFragment"
+        android:name="ru.crmkurgan.main.ui.form.SignUpFragment"
+        android:label="SignUpFragment">
+        <action
+            android:id="@id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/startUpFragment" />
+        <action
+            android:id="@id/action_signUpFragment_to_verifyAccountFragment"
+            app:destination="@id/verifyAccountFragment" />
+        <action
+            android:id="@id/action_signUpFragment_to_policyFragment"
+            app:destination="@id/policyFragment" />
+        <deepLink app:uri="android-app://ru.crmkurgan.main/signUp"/>
+    </fragment>
+    <fragment
+        android:id="@id/policyFragment"
+        android:name="ru.crmkurgan.main.ui.form.PolicyFragment"
+        android:label="PolicyFragment" />
+    <fragment
+        android:id="@id/changePasswordFragment"
+        android:name="ru.crmkurgan.main.ui.form.ChangePasswordFragment"
+        android:label="ChangePasswordFragment" />
+    <fragment
+        android:id="@id/forgotPasswordFragment"
+        android:name="ru.crmkurgan.main.ui.form.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment">
+        <action
+            android:id="@id/action_forgotPasswordFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/verifyAccountFragment"
+        android:name="ru.crmkurgan.main.ui.form.VerifyAccountFragment"
+        android:label="VerifyAccountFragment" />
+</navigation>
